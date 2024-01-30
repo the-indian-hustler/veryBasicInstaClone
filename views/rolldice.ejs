@@ -1,0 +1,32 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Dice</title>
+</head>
+<body> -->
+
+
+
+    <!-- instead of writing the above code ,we are 
+creating the subtemplate of the code and using
+in all the ejs files  by using the following
+ command -->
+    
+        <!-- Dice gave the value : <%= Math.floor(Math.random() *6) + 1 %>  ye likhne ki jaroorat nahi bcoz ab 
+        as a database pass ho rha h data isliye direct value import karo-->
+        <%- include("head.ejs") %>
+        <body>
+            <h1>
+                <!-- Dice gave the value : <%= Math.floor(Math.random() * 6) + 1 %> -->
+                You entered value <%= diceVal %>
+                <% if (diceVal == 6) { %>
+                    <h2>Nice, Roll the dice again</h2>
+                <% } %>
+            </h1>
+
+            <%- include("footer.ejs") %>
+        </body>
+        </html>
+        

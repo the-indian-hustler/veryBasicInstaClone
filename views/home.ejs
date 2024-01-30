@@ -1,0 +1,29 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body> -->
+
+
+    <!-- instead of writing the above code ,we are 
+creating the subtemplate of the code and using
+in all the ejs files  by using the following
+ command -->
+ <%- include("head.ejs") %>
+    <body>
+    <h1>This is a home page 1 + 2</h1>
+    <h3><%= 1*2 %></h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Optio numquam eius aperiam laborum corporis! Incidunt
+        exercitationem obcaecati, itaque inventore perspiciatis
+        quos laborum debitis similique consequatur neque tempore
+        optio molestiae delectus.</p>
+        <button>Click me</button>
+        <%- include("footer.ejs") %>
+    
+</body>
+</html>
